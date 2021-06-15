@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mercado liebre</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/f226d612e4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+        <img src="/images/logo-mercado-liebre.svg" class="logo">
+        <h2 class="copy-header">
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>
+
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"></i>
+        </a>
+
+            <nav class="main-navbar">
+                <ul class="left-navbar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="rigth-navbar">
+                    <li><a href="#">Creá tu cuenta<i class="fas fa-credit-card"></i></a></li>
+                    <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+    
+    
+    
+    
+    
+        </header>
+        <!--Formulario-->
+        <form action="/crear producto" method="POST" class="create-form">
+            <div class="control-formulario">
+                <label>Nombre del producto</label>
+                <input type="text" name="nombre" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Precio del producto</label>
+                <input type="number" name="Precio" placeholder="123.56" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Categoría</label>
+                <select name="categoria" class="control">
+                    <option value="Hogar">Hogar</option>
+                    <option value="Electro">Electro</option>
+                    <option value="Indumentaria">Indumentaria</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Ciudad</label>
+                <select name="Ciudad" class="control">
+                    <option value="Ecatepec">Ecatepec</option>
+                    <option value="Coacalco">Coacalco</option>
+                    <option value="Cuautitlan">Cuautitlan</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Descripción</label>
+                <textarea name="descripcion" class="control"></textarea>
+            </div>
+            <div class="control-formulario">
+                <label>Esta en Oferta</label>
+                <input type="radio" name="oferta">
+            </div>
+            <button type="submit" class="boton-formulario">Guardar</button>
+            <button type="reset" class="boton-formulario">Borrar</button>
+        </form>
+
+        <article class="product">
+            <img src="/images/iphone11.png">
+            <h2>iPhone 11</h2>
+        </article>
+    </body>
+</html>
