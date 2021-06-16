@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(235,235,235);
 }
 .main-header{
     background-color: #EAC926;
@@ -86,38 +87,153 @@ padding: 5px 10px;
 border-radius: 5px;
 }
 
-.product{
-margin: 30px 15px;
-padding: 0 15px;
-position: relative;
+
+
+
+.categorias-populares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+.categorias-populares a {
+    text-decoration: none;
+    background-color: white;
+    margin: 1px 1px;
+}
+.categorias-populares a:hover {
+    background-color:rgb(52, 131, 250);
+}
+.categorias-populares a:hover .material-icons-outlined{
+    background-color:rgb(52, 131, 250);
+    color:white;
+}
+.categorias-populares a:hover .titulo-de-categoria{
+    background-color:rgb(52, 131, 250);
+    color:white;
+}
+.titulo-categorias {
+    font-weight: 300;
+    font-family: roboto;
+    margin-left: 13vw;
+    padding-top:50px;
+}
+#categorias-populares {
+    margin-bottom: 15px;
+}
+.categoria {
+    display: block;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    width: 12vw;
+    height: 12vw;
+}
+.categoria .material-icons-outlined {
+    font-size: 5vw;
+    font-weight: 300;
+    color: rgb(52, 131, 250);
+    text-align: center;
+    position: relative;
+    left: 3vw;
+}
+.categoria .titulo-de-categoria {
+    color: black;
+    font-weight: 300;
+    background-color: white;
+    max-width:11vw;
+    text-align: center;
 }
 
-.product img{
-    width: 100%;
+
+.precio-anterior p{
+    color: rgba(0, 0, 0, .7);
+    margin-bottom: -11px;
+    font-size: 13px;
+    margin-left:5px;
+    text-decoration: line-through;
+}
+.precio-anterior {
+    visibility: hidden;
+}
+.producto-a:hover .precio-anterior {
+    visibility: visible;
+}
+.descripcion-producto p{
+    color: rgba(0, 0, 0, .7);
+    font-size: 13px;
+    margin-left:5px;
+}
+.descripcion-producto {
+    visibility: hidden;
+}
+.producto-a:hover .descripcion-producto {
+    visibility: visible;
 }
 
-.product:hover h2{
-    opacity: 1;
-    background-color: rgba(255,0,0,0.5);
-    border-radius: 50%;
+.seccion-titulo-oferta {
+    display: flex;
+    margin-bottom: -15px;
 }
-
-.product h2{
-    background-color: rgba(0,0,0,0.5);
-    color: #ffffff;
-    margin: 0;
-    padding: 15px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+.ver-todas {
+    margin-left: 20px;
+    color: blue;
+    font-size: 14px;
+    position: relative;
+    top: 11px;
+    text-decoration: none;
+}
+.ofertas {
     display: flex;
     justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 450ms;
+    padding: 1vw;
 }
+.producto {
+    width: 14vw;
+    background-color: white;
+}
+.producto-a {
+    width: 14vw;
+    background-color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.producto img {
+    max-width: 13vw;
+    max-height: 13vw;
+    margin-bottom: -5px;
+}
+.precio-descuento {
+    display: flex;
+}
+
+.precio-producto {
+    color: black;
+    margin-bottom: -11px;
+    font-size: 18px;
+    margin-left:5px;
+}
+.descuento {
+    padding-left: 25px;
+    color: #39b54a;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
+.pagos-diferidos {
+    color: black;
+    margin-bottom: -11px;
+    font-size: 14px;
+    margin-left:5px;
+}
+.modo-envio {
+    color: #39b54a;
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-left:5px;
+}
+
+
 
 @media(min-width:768px){
     .main-header-top-bar{
