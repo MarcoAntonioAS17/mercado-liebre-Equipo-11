@@ -34,7 +34,7 @@ display: flex;
     font-weight: 500;
     color: #4b4b4b;
     margin: 16px 0 0;
-    display: block;
+    display: flex;
     
 }
 .contenedor_footer {
@@ -42,9 +42,67 @@ display: flex;
 }
 
 .copyrigth{
-    width: 920px;
-    height: 106px;
+    width: 450px;
+    height: 80px;
     position: absolute;
-    top:55px;
-    display: block;
+    top:500px;
+   left: 5px;
+    
+    text-align: left;
+}
+
+.App{
+    color: black;
+}
+@media (min-width: 767px) {
+    .contenedor_General{
+        width: 920px;
+        height: 296px;
+        
+    }
+    .contenedor1{
+    width: 306.66px;
+    height: 260px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1px;
+    display: flex;
+    }
+    
+    .info-contenedor{
+        width: 258px;
+        height: 55px;
+        text-align: center;
+    }
+    .imagen{
+        width: 66px;
+        height: 46px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .h1{
+        line-height: 1.2;
+        font-size: 20px;
+        font-weight: 500;
+        color: #4b4b4b;
+        margin: 16px 0 0;
+        display: flex;
+        
+    }
+    .contenedor_footer {
+        text-align: center;
+    }
+    
+    .copyrigth{
+        width: 920px;
+        height: 106px;
+        position: absolute;
+        top:500px;
+       left: 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
