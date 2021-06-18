@@ -10,6 +10,7 @@ body{
 .main-header{
     background-color: #EAC926;
     padding: 20px;
+    width: 100vw;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -37,7 +38,7 @@ body{
         transform: scale(1);
     }
     100%{
-        transform: scale(1.5);
+        transform: scale(1.1);
     }
 }
 
@@ -47,7 +48,12 @@ text-align: center;
 }
 
 .main-navbar{
-display: none;    
+    display: none;
+    height: calc(100vh-200px);
+}
+
+input[type="checkbox"]:checked + .main-navbar {
+    display: block;
 }
 
 .main-navbar ul{
@@ -55,6 +61,8 @@ display: none;
     margin: 0;
     padding: 0;
 }
+
+
 
 .main-navbar a{
     text-decoration: none;
@@ -149,6 +157,10 @@ position: relative;
     }
 }
 @media(min-width:1200px){
+    .main-header {
+        padding: 1.5rem 8rem;
+    }
+
     .logo{
         width: 250px;
     }
