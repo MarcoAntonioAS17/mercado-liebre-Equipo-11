@@ -3,7 +3,8 @@ const path = require('path');
 
 const app = express();
 
-const PORT = process.env.PORT || 3000
+//const PORT = process.env.PORT || 3000
+const PORT = 3000;
 app.use(express.static(path.resolve(__dirname, './public')) );
 
 
@@ -13,4 +14,4 @@ app.listen(PORT, () => {
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/index.html'));
-})
+});
