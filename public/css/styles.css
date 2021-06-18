@@ -100,6 +100,11 @@ border-radius: 5px;
 
 
 @media(min-width:768px){
+
+    .create-form {
+        padding: 20px 12rem;
+    }
+
     .main-header-top-bar{
         
         display: flex;
