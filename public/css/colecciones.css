@@ -1,0 +1,67 @@
+.seccion_colecciones h1{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.seccion_colecciones {
+    padding: 1rem 0.5rem;
+    background-color: aqua;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.contenedor_colecciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.coleccion_item {
+    width: 49%;
+    border-radius: 4px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.coleccion_item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coleccion_item img {
+    width: 90%;
+    height: 90%;
+}
+
+.seccion_colecciones > a {
+    width: 100%;
+    margin-top: 8px;
+    background-color: white;
+    border: 4px;
+    text-decoration: none;
+    text-align: center;
+    color: #3483fa;
+    display: block;
+    padding: 11px;
+}
+
+@media (min-width: 767px) {
+
+    .seccion_colecciones {
+        padding: 2rem 14rem;
+    }
+    .coleccion_item {
+        width: 184px;
+        height: 184px;
+    }
+
+    .enlace_ver_mas {
+        display: none !important;
+    }
+}
